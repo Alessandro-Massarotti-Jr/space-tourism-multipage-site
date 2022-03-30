@@ -1,0 +1,120 @@
+.crew{
+    background-image: url('../images/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 80px 80px 0px 80px;
+}
+
+
+
+.crew .title span{
+color: var(--color-two);
+}
+
+.crew .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.crew .content .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.crew .title{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.crew .content .info h3{
+    color: var(--color-two);
+    text-transform: uppercase;
+}
+
+.crew .content .info h2{
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+.crew .content .info p{
+    max-width: 450px;
+    color: var(--color-two);
+}
+
+.crew .content .info menu{
+    position: absolute;
+    bottom: 40px;
+}
+
+.crew .content .info menu button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-two);
+    opacity: 0.7;
+    margin:0px 10px
+}
+
+.crew .content .info menu button:hover{
+    opacity: 1;
+}
+
+.crew .content .info menu button.active{
+    opacity: 1;
+    background-color: var(--color-three);
+}
+
+.crew .content .image img{
+    object-fit: contain;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+@media(max-width:900px){
+    .crew{
+        background-image: url('../images/crew/background-crew-tablet.jpg');
+        padding: 80px 30px 0px 30px;
+        min-height: 100vh;
+        height: unset;
+    }
+    .crew .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .crew .content .info{
+        margin-bottom: 90px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .crew .content .title{
+      text-align: start;
+      margin-right: auto;
+      margin-bottom: 40px;
+    }
+    .crew .content .image{
+        display: flex;
+        justify-content: center;
+    }
+    .crew .content .image img{
+       width: 80%;
+       height: 80%;
+    }
+
+    .crew .content .info menu{
+        position: unset;
+        margin-top: 20px;
+    }
+}

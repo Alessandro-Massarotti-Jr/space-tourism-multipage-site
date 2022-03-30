@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space tourism website</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components/nav.css">
+    <link rel="stylesheet" href="assets/css/destination.css">
+
+
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo">
+            <img src="assets/images/shared/logo.svg" alt="logo">
+        </a>
+        <nav>
+            <a href="/" class="navText navLink"><span>00</span> Home</a>
+            <a href="destination.html" class="navText navLink active"><span>01</span> Destination</a>
+            <a href="crew.html" class="navText navLink"><span>02</span> Crew</a>
+            <a href="tecnology.html" class="navText navLink"><span>03</span> Tecnology</a>
+        </nav>
+    </header>
+
+
+
+    <div id="destination" class="destination">
+        <div class="title">
+            <h1 class="title5"><span>01</span> Pick your destination</h1>
+        </div>
+        <div class="content">
+            <div class="image">
+                <img id="planetImage" src="assets/images/destination/image-moon.png" alt="Moon">
+            </div>
+            <div class="info">
+                <menu>
+                    <a value="Moon" class="navText menu-item active"> Moon</a>
+                    <a value="Mars" class="navText menu-item">Mars</a>
+                    <a value="Europa" class="navText menu-item">Europa</a>
+                    <a value="Titan" class="navText menu-item">Titan</a>
+                </menu>
+
+                <h2 class="title2" id="planetName">Moon</h2>
+
+                <p id="planetText">See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+                    regain perspective and come back refreshed. While you’re there, take in some history
+                    by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+                <div class="stats">
+                    <div class="item">
+                        <h3 class="subTitle2">Avg. distance</h3>
+                        <p class="subTitle1" id="planetDistance">384,400 km</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="subTitle2">Est. travel time</h3>
+                        <p class="subTitle1" id="planetTravelTime">3 days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/destination.js"></script>
+</body>
+
+</html>
