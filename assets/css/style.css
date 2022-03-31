@@ -1,86 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
-    --color-one:#0b0d17;
-    --color-two:#d0d6f9;
-    --color-three:#ffffff;
+:root {
+    --color-one  : #0b0d17;
+    --color-two  : #d0d6f9;
+    --color-three: #ffffff;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: var(--color-three);
+* {
+    margin         : 0;
+    padding        : 0;
+    box-sizing     : border-box;
+    color          : var(--color-three);
     text-decoration: none;
 }
 
-body{
+body {
     min-height: 100vh;
 }
 
-.title1{
+.title1 {
     font-family: 'Bellefair', serif;
-    font-size: 150px;
+    font-size  : 150px;
     font-weight: 400
 }
 
-.title2{
+.title2 {
     font-family: 'Bellefair', serif;
-    font-size: 100px;   
+    font-size  : 100px;
     font-weight: 400
 }
 
-.title3{
+.title3 {
     font-family: 'Bellefair', serif;
-    font-size: 56px; 
+    font-size  : 56px;
     font-weight: 400
 }
 
-.title4{
+.title4 {
     font-family: 'Bellefair', serif;
-    font-size: 32px;   
-    font-weight: 400 
+    font-size  : 32px;
+    font-weight: 400
 }
 
-.title5{
+.title5 {
+    font-family   : 'Barlow Condensed', sans-serif;
+    font-size     : 28px;
+    letter-spacing: 4.75px;
+    font-weight   : 400
+}
+
+.subTitle1 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;  
-    letter-spacing: 4.75px; 
+    font-size  : 28px;
     font-weight: 400
 }
 
-.subTitle1{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
-    font-weight: 400
-}
-
-.subTitle2{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 14px;
+.subTitle2 {
+    font-family   : 'Barlow Condensed', sans-serif;
+    font-size     : 14px;
     letter-spacing: 2.35px;
-    font-weight: 400
+    font-weight   : 400
 }
 
-.navText{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 16px;
-    letter-spacing: 2.7px;   
-    font-weight: 400 
+.navText {
+    font-family   : 'Barlow Condensed', sans-serif;
+    font-size     : 16px;
+    letter-spacing: 2.7px;
+    font-weight   : 400
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width           : 10px;
     background-color: var(--color-two);
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--color-one);
-  }
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-   background: rgba(0,0,0,0.9);
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-one);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.9);
+}

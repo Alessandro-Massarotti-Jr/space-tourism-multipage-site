@@ -19,12 +19,27 @@
         <a href="index.html" class="logo">
             <img src="assets/images/shared/logo.svg" alt="logo">
         </a>
-        <nav>
+        <nav class="menu">
             <a href="index.html" class="navText navLink"><span>00</span> Home</a>
             <a href="destination.html" class="navText navLink"><span>01</span> Destination</a>
             <a href="crew.html" class="navText navLink"><span>02</span> Crew</a>
             <a href="tecnology.html" class="navText navLink active"><span>03</span> Tecnology</a>
         </nav>
+
+        <div class="mobileMenu">
+            <menu>
+                <button class="openBtn active"><img src="assets/images/shared/icon-hamburger.svg"
+                        alt="open menu button"></button>
+                <button class="closeBtn"><img src="assets/images/shared/icon-close.svg"
+                        alt="close menu button"></button>
+            </menu>
+            <nav>
+                <a href="index.html" class="navText navLink"><span>00</span> Home</a>
+                <a href="destination.html" class="navText navLink"><span>01</span> Destination</a>
+                <a href="crew.html" class="navText navLink"><span>02</span> Crew</a>
+                <a href="tecnology.html" class="navText navLink active"><span>03</span> Tecnology</a>
+            </nav>
+        </div>
     </header>
 
     <div id="tecnology" class="tecnology">
@@ -33,7 +48,8 @@
         </div>
         <div class="content">
             <div class="mobileImage">
-                <img id="tecnologyMobileImage" src="assets/images/technology/image-launch-vehicle-landscape.jpg" alt="Launch vehicle">
+                <img id="tecnologyMobileImage" src="assets/images/technology/image-launch-vehicle-landscape.jpg"
+                    alt="Launch vehicle">
             </div>
             <menu>
                 <button value="Launch vehicle" class="menu-item title4 active">1</button>
@@ -43,17 +59,19 @@
             <div class="info">
                 <h3 class="navText">The terminology...</h3>
                 <h2 id="tecnologyName" class="title3">Launch vehicle</h2>
-                <p id="tecnologyText">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's
+                <p id="tecnologyText">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+                    payload from Earth's
                     surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in
                     operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
             </div>
             <div class="image">
-                <img id="tecnologyImage" src="assets/images/technology/image-launch-vehicle-portrait.jpg" alt="Launch vehicle">
+                <img id="tecnologyImage" src="assets/images/technology/image-launch-vehicle-portrait.jpg"
+                    alt="Launch vehicle">
             </div>
         </div>
     </div>
-
-<script src="assets/js/tecnology.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/tecnology.js"></script>
 </body>
 
 </html>

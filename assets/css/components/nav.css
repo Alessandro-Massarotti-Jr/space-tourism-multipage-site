@@ -1,51 +1,128 @@
-header{
-    position: fixed;
-    top: 20px;
-    display: flex;
-    flex-direction: row;
+header {
+    position       : fixed;
+    top            : 20px;
+    display        : flex;
+    flex-direction : row;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    align-items    : center;
+    width          : 100%;
 }
 
-header .logo{
-margin-left: 20px;
+header .logo {
+    margin-left: 20px;
 }
 
-header nav{
+header nav {
 
-    padding: 30px 10px;
-    background-color: rgba(255,255,255,0.1);
-    backdrop-filter: blur(5px);
-    border-top-left-radius: 3px;
+    padding                  : 30px 10px;
+    background-color         : rgba(255, 255, 255, 0.1);
+    backdrop-filter          : blur(5px);
+    border-top-left-radius   : 3px;
     border-bottom-left-radius: 3px;
 }
 
 
-header nav a{
-    margin: 0 10px;
-    position: relative;
-    cursor: pointer;
+header nav a {
+    margin        : 0 10px;
+    position      : relative;
+    cursor        : pointer;
     text-transform: uppercase;
-    transition: 0.3S ease-in-out;
+    transition    : 0.3S ease-in-out;
     padding-bottom: 25px;
-    border-bottom: 5px solid #ffffff00;
+    border-bottom : 5px solid #ffffff00;
 }
 
-header nav a:hover{
-   border-bottom: 5px solid var(--color-two);
+header nav a:hover {
+    border-bottom: 5px solid var(--color-two);
 }
 
-header nav a span{
+header nav a span {
     font-weight: bold;
 }
 
-header nav a.active{
+header nav a.active {
     border-bottom: 5px solid var(--color-three);
 }
 
-@media(max-width:900px){
-    header{
+.mobileMenu {
+    display: none;
+}
+
+@media(max-width:900px) {
+    header {
         top: 0px;
-    }   
+    }
+}
+
+@media(max-width:600px) {
+    .menu {
+        display: none;
+    }
+
+    .mobileMenu {
+        display        : flex;
+        flex-direction : column;
+        align-items    : flex-end;
+        justify-content: flex-end;
+    }
+
+    .mobileMenu menu button {
+        padding                  : 10px;
+        color                    : var(--color-three);
+        background-color         : transparent;
+        backdrop-filter          : blur(5px);
+        border-top-left-radius   : 3px;
+        border-bottom-left-radius: 3px;
+        border-style             : none;
+        cursor                   : pointer;
+        display                  : none;
+    }
+
+    .mobileMenu menu button.active {
+        display : block;
+        position: absolute;
+        top     : 0;
+        right   : 0;
+        z-index : 1;
+    }
+
+    .mobileMenu nav {
+        display         : flex;
+        flex-direction  : column;
+        align-items     : flex-start;
+        position        : absolute;
+        top             : 0;
+        padding         : 10px 10px;
+        width           : 0px;
+        height          : 100000%;
+        background-color: transparent;
+        transition      : 0.3s ease-in-out;
+    }
+
+    .mobileMenu nav a {
+        margin-bottom: 15px;
+        padding      : 15px;
+        border-bottom: 5px solid rgba(0, 0, 0, 0.0);
+        border-left  : 5px solid rgba(0, 0, 0, 0.0);
+    }
+
+    .mobileMenu nav a:hover {
+        border-bottom: 5px solid var(--color-two);
+        border-left  : 5px solid var(--color-two);
+    }
+
+    .mobileMenu nav a.active {
+        border-bottom: 5px solid var(--color-three);
+        border-left  : 5px solid var(--color-three);
+    }
+
+    .mobileMenu nav a:last-child {
+        margin-bottom: 0px;
+    }
+
+    .mobileMenu nav.active {
+        width           : 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter : blur(5px);
+    }
 }
